@@ -53,5 +53,5 @@ The dataset was obtained from the Breast Cancer Immunohistochemistry (BCI) proje
   * Recall: 98.9%
   * ROC AUC: 0.819
 
-### Notes
-This project demonstrates the trade-offs between precision and recall in medical image classification tasks.
+### Conclusion
+The purpose of this project was to evaluate three different CNN architectures created to classify HER2 status in breast cancer histopathology images. Between the models, the HAHNet-Based with Inception Block Architecture architecture proved to have the best ability to generalize unseen images and maintain a high perceptiveness for the HER2 positive samples. This is critical for clinical diagnostic settings, as false negatives could be devastating to a patient’s treatment plan and their disease outcome. Despite this success, the model can still be improved upon. One of the current limitations is the precision score, which indicates there is a need to minimize the number of false positive predictions. Future versions of this model may increase the precision score by adjusting the weight formula or augmenting the dataset, both of which would offset the class imbalance. 
