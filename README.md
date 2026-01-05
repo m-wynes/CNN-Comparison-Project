@@ -14,44 +14,15 @@ The dataset was obtained from the Breast Cancer Immunohistochemistry (BCI) proje
     - ROC-AUC
 * Tracked training loss across epochs and visualized with Matplotlib
 ### Results
-* #### CNN #1 (LeNet-Based)
-  Training Set:
-  * Accuracy: 83.1%
-  * Precision: 94.6%
-  * Recall: 80.9%
-  * ROC AUC: 0.940 
 
-  Validation Set:
-  * Accuracy: 70.6% 
-  * Precision: 83.8%
-  * Recall: 72.3%
-  * ROC AUC: 0.778
-
-* #### CNN #2 (AlexNet-Based)
-  Training Set: 
-  * Accuracy: 71.2%
-  * Precision: 78.7%
-  * Recall: 81.9%
-  * ROC AUC: 0.769
-
-  Validation Set:
-  * Accuracy: 71.0%
-  * Precision: 78.1%
-  * Recall: 81.8%
-  * ROC AUC: 0.776
-
-* #### CNN #3 (HAHNet-Based with Inception Block Architecture)
-  Training Set:
-  * Accuracy: 71.9%
-  * Precision: 71.9%
-  * Recall: 99.2%
-  * ROC AUC: 0.808
-
-  Validation Set:
-  * Accuracy: 72.4%
-  * Precision: 72.7%
-  * Recall: 98.9%
-  * ROC AUC: 0.819
+| Model | Dataset | Accuracy | Precision | Recall | ROC-AUC |
+| --- | --- | --- | --- |--- |--- |
+| LeNet-Based | Training | 83.1% | 94.6% | 80.9% | 0.940 |
+| | Validation | 70.6% | 83.8% | 72.3% | 0.778 |
+| AlexNet-Based | Training | 71.2% | 78.7% | 81.9% | 0.769 |
+| | Validation | 71.0% | 78.1% | 81.8% | 0.776 |
+| HAHNet-Based with Inception Block Architecture | Training | 71.9% | 71.9% | 99.2% | 0.808 |
+| | Validation | 72.4% | 72.7% | 98.9% | 0.819 |
 
 ### Conclusion
 The purpose of this project was to evaluate three different CNN architectures created to classify HER2 status in breast cancer histopathology images. Between the models, the HAHNet-Based with Inception Block Architecture architecture proved to have the best ability to generalize unseen images and maintain a high perceptiveness for the HER2 positive samples. This is critical for clinical diagnostic settings, as false negatives could be devastating to a patient’s treatment plan and their disease outcome. Despite this success, the model can still be improved upon. One of the current limitations is the precision score, which indicates there is a need to minimize the number of false positive predictions. Future versions of this model may increase the precision score by adjusting the weight formula or augmenting the dataset, both of which would offset the class imbalance. 
